@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>FK Fullstack Developer</title>
+  </head>
+
+  <body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>Mi Portfolio</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a>
+                </li>
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- ICONOS DEL MENU RESPONSIVE -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- ICONOS DE LAS REDES SOCIALES -->
+            <div class="redes">
+              <a
+                href="https://www.linkedin.com/in/franco-kuperman/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin fa-2xl"></i
+              ></a>
+              <a href="https://github.com/franco329" target="_blank"
+                ><i class="fa-brands fa-square-github fa-2xl"></i
+              ></a>
+            </div>
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2>Soy <span>Franco Kuperman</span>, Fullstack Developer</h2>
+          <p class="descripcion">
+            Soy egresado en Henry donde allí me he graduado de Desarrollador Web
+            Full Stack. Estoy seguro de que esta experiencia será valiosa para
+            mi futuro profesional ya que me formó con una sólida base en la
+            industria tecnológica.
+          </p>
+          <a href="#portfolio">Ir a Portafolio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto perfil.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, soy <span>Franco Kuperman</span></h2>
+        <h3>Desarrollador Web Fullstack</h3>
+        <p>
+          Soy de Rosario, Santa Fe, Argentina. Tengo 29 años y me considero una
+          persona altamente organizada y motivada por la tecnología. Además de
+          la dedicación a mi educación, también me esfuerzo por estar
+          actualizado en las últimas tendencias y tecnologías en el campo, lo
+          que me permite tener una visión amplia y una mentalidad innovadora.
+          Estoy emocionado por ver cómo mis habilidades y conocimientos
+          evolucionan y cómo puedo aplicarlos en el futuro.
+        </p>
+        <a
+          href="https://drive.google.com/file/d/1oFXO0174xIegHBOixx8CuKPDxfgbvvT3/view?usp=share_link"
+          target="_blank"
+          >Descargar CV</a
+        >
+      </div>
+    </section>
+
+    <!-- SECCION SERVICIOS -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Desarrollo de aplicaciones Web</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>React JS</li>
+          </ul>
+          <p>
+            Utilizando la pila MERN, para ofrecer una experiencia de usuario
+            eficiente y atractiva.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Creación de API REST</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Express</li>
+            <li>Node.js</li>
+          </ul>
+          <p>
+            Para proporcionar una comunicación eficiente y confiable entre las
+            aplicaciones web y sus bases de datos.
+          </p>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-code"></i></span>
+          <h4>Desarrollo de aplicaciones Web frontend</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>React</li>
+            <li>Typescript</li>
+          </ul>
+          <p>Para ofrecer una experiencia de usuario mejorada</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Html & Css</p>
+          <span class="porcentaje">95%</span>
+        </div>
+        <div class="barra">
+          <div id="html" class="barra-progreso1"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Javascript</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="js" class="barra-progreso2"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>Base de Datos</p>
+          <span class="porcentaje">90%</span>
+        </div>
+        <div class="barra">
+          <div id="bd" class="barra-progreso3"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"></span>React JS</p>
+          <span class="porcentaje">85%</span>
+        </div>
+        <div class="barra">
+          <div id="ps" class="barra-progreso4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="https://youtu.be/GeekmestCcI" target="_blank"
+            ><img src="img/captura-pf.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>Librería Imperio Boreal</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <a href="https://youtu.be/rfx4InZFGgs" target="_blank"
+            ><img src="img/captura-poke.png" alt=""
+          /></a>
+          <div class="info">
+            <h4>Pokemon App</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <!-- <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="" alt="">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div> -->
+      </div>
+      <!-- <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/captura-pf.png" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/captura-poke.png" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="" alt="">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+      </div> -->
+      <!-- <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/captura-pf.png" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/captura-poke.png" alt="" />
+          <div class="info">
+            <h4>Descripción del Proyecto</h4>
+            <p>Diseño Web</p>
+          </div>
+        </div>
+
+        <div class="proyecto">
+            <div class="overlay"></div>
+            <img src="" alt="">
+            <div class="info">
+                <h4>Descripción del Proyecto</h4>
+                <p>Diseño Web</p>
+            </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+      <p>Todos los derechos reservados - 2023</p>
+      <div class="redes">
+        <a href="https://www.linkedin.com/in/franco-kuperman/" target="_blank"
+          ><i class="fa-brands fa-linkedin fa-lg"></i
+        ></a>
+        <a href="https://github.com/franco329" target="_blank"
+          ><i class="fa-brands fa-square-github fa-lg"></i
+        ></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
