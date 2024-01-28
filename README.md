@@ -9,7 +9,7 @@
 
 - 📫 How to reach me **franco_kuperman@hotmail.com**
 
-- 📄 Know about my experiences [https://drive.google.com/file/d/1ginOK7IMk9k5B4BGNCNFWGFYPj9jTYdt/view?usp=sharing](https://drive.google.com/file/d/1ginOK7IMk9k5B4BGNCNFWGFYPj9jTYdt/view?usp=sharing)
+- 📄 Know about my experiences [https://drive.google.com/file/d/11eoW7Twm7BUpY_wUFxT4nTFueC0h20gM/view?usp=sharing](https://drive.google.com/file/d/11eoW7Twm7BUpY_wUFxT4nTFueC0h20gM/view?usp=sharing)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
